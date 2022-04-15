@@ -1,0 +1,98 @@
+/* Reset default browser styles */
+:root {
+    --main-color: #1D2731;
+    --gold-leaf: #D9B310;
+    --sky-blue: #328CC1;
+    --light-grey: #9088A1;
+    --prussian-blue: #0B3C5D;
+    --bright-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited {
+    color: var(--bright-white);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--prussian-blue);
+}
+
+.container-fluid {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    background-color: var(--prussian-blue);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.dropdown a:hover {
+    background-color: green;
+}
+
+.dropdown-menu {
+    background-color: var(--gold-leaf);
+    width: max-content;
+    padding: 5px;
+}
+
+.dropdown-menu a {
+    font-size: large;
+    color: var(--prussian-blue);
+    padding: 5px;
+}
+
+.dropdown-menu a:hover {
+    color: var(--bright-white);
+}
+
+.patreon-btn {
+    border: 1px solid var(--gold-leaf);
+}
+
+.patreon-btn:hover {
+    background-color: green;
+}
+
+.jumbotron {
+    background-color: var(--main-color);
+    margin-bottom: 0;
+    padding: 1.5rem;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: var(--light-grey);
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+.myLogo {
+    width: 150px;
+    border-radius: 30%;
+    border: 2px dashed var(--gold-leaf);
+}
+
+.main-content {
+    height: 100%;
+}
+
+.panel-footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--gold-leaf);
+}
